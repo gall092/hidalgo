@@ -1,0 +1,139 @@
+body{
+	background-size: 100%;
+	background-color: #BDBDBD;
+	font-size: 18px;
+}
+
+header{
+	background-color: #54d242; /*color de fondo de esta caja */
+	color: white; /*color de texto */
+	text-align: center; /*alineacion del texto centrado */
+	padding: 5px;
+	font-size: 2em;
+	width: 100%;
+}
+p{
+	text-align: center;
+}
+
+body{
+	
+	background-size: cover;
+
+	
+}
+
+nav{
+	background-img: url(img/vitral.jpg);
+	line-height: 30px;
+	background-color: #ed0000; /*color de fondo del nav con ese codigo hexadecimal */
+	color: white;
+	height: 600px; /*altura de la caja nav	 */
+	float: left; /*flote a la izquierda */
+	padding: 5px;
+	font-size: 1em; /*tamaño de las letter */
+	text-decoration: none;
+	margin: 20px;
+	width: 20%;
+}
+
+nav a:hover{
+	/*estoy configurando los enlaces cuando los clickeo */
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+section{
+	float: left;
+      width: 100px; /* o cualquier valor deseado */
+      height: auto;
+    
+    
+      width: 100%;
+      overflow: auto; /* Para limpiar el float */
+    
+	width: 40%;
+	float: left;
+	background-color: white;
+	color: black;
+	text-align: justify;
+	font-size: 1em;
+	padding: 0px 0px 0px 0px;
+}
+
+footer
+{
+	background-color: grey;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+	width: 100%;
+}
+img{
+	display: block;
+	margin: auto;
+	clear: right;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+main .imagen{
+	text-align: center;
+	width: 40%;
+}
+main .imagen img{
+	max-width: 40%;
+	height: auto;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: transform 0.3s ease;
+}
+main .imagen img:hover{
+	/*que cuando le paso el mouse por encima a las img*/
+	transform: scale(2.05);
+}
+
+@media  (max-width: 600px) {
+	body{
+		background-color: darkred;
+		
+	}
+
+	nav{
+		line-height: 30px;
+		background-color: black; /*color de fondo del nav con ese codigo hexadecimal */
+		color: pink;
+		height: 400px; /*altura de la caja nav	 */
+		float: left; /*flote a la izquierda */
+		padding: 5px;
+		font-size: 0.5em; /*tamaño de las letter */
+		text-decoration: none;
+		margin: 20px;
+		width: 20%;
+	}
+
+	main .imagen{
+		text-align: center;
+		width: 20%;
+		flex-direction: column;
+		font-size: 0.5em;
+
+	}
+	main .imagen img{
+		width: 60%;
+		height: auto;
+		
+	}
+
+	header{
+		font-size: 1em;
+	}
+
+	footer {
+		font-size: 0.6em;
+
+	}
+
+}
